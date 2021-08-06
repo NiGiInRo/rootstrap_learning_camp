@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Topics
+
+names = ["topic 5", "topic 2", "topic 3", "topic 4", "topic 1"]
+5.times do
+Topic.create(name: names.sample, image: "Whatever").save
+end
+
